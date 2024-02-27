@@ -10,6 +10,7 @@ class TestUserRegistration(unittest.TestCase):
     def test_register_user(self):
         # Create a mock UserRepository
         mock_repository = MagicMock()
+
         mock_repository.save.return_value = User(
             "test_user", "test@example.com", "password"
         )
