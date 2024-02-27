@@ -54,3 +54,15 @@ conda install matplotlib
 # to activate the poetry
 
 `export PATH="$HOME/.local/bin:$PATH"`
+
+# Table create
+
+```SQL
+CREATE TABLE example_users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+```
