@@ -55,6 +55,11 @@ conda install matplotlib
 
 `export PATH="$HOME/.local/bin:$PATH"`
 
+# Creating an env file
+
+create a .env file at root level.
+Add `DATABASE_CONNECTION` and a valid db connection to connect to postgres db. Then create the table and then you are ready to go.
+
 # Table create
 
 ```SQL
