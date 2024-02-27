@@ -11,7 +11,7 @@ class TestUserRegistration(unittest.TestCase):
         # Create a mock UserRepository
         mock_repository = MagicMock()
         mock_repository.save.return_value = User(
-            "test_user", "test@example.com", "password", 1
+            "test_user", "test@example.com", "password"
         )
 
         # Instantiate UserRegistration with the mock repository
@@ -31,7 +31,6 @@ class TestUserRegistration(unittest.TestCase):
         self.assertEqual(user.username, "test_user")
         self.assertEqual(user.email, "test@example.com")
         self.assertEqual(user.password, "password")
-        self.assertEqual(user.id, 1)
 
 
 if __name__ == "__main__":
